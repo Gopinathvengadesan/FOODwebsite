@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden; 
+}
+
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 10px 50px;
+    margin-right: 17px;
+}
+
+section nav .logo {
+    position: relative; 
+}
+
+section nav .logo img {
+    width: 50px; 
+    height: auto; 
+    cursor: pointer;
+    margin: 0;
+}
+
+section nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+section nav ul li {
+    margin: 0 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s, border-bottom 0.3s; 
+    position: relative;
+}
+
+section nav ul li a::after {
+    content: '';
+    position: absolute; 
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    transition: width 0.3s;
+}
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+section nav ul li a:hover {
+    color: red;
+}
+
+section nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s; 
+
+}
+section nav .icon i:hover{
+    color:blue;
+}       
+section .men_text {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+    position: relative;
+    top: 50%; 
+    left: 10px; 
+    margin-left: 500px;
+    text-align: center;   
+    font-size: 30px;
+    background: transparent;
+}
+
+.display-image {
+    position: absolute;
+    top: 60%; 
+    right: 0; 
+    bottom: 100px;
+}
+
+section .men_text h1 span {
+    margin-left: -10px; 
+    color: #fac031;
+    font-family: Georgia, serif;    
+    line-height: 1.2;
+    font-size: 70px; 
+}
+
+section p {
+    width: 600px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 90px 0 90px 700px; 
+    font-size: 20px;
+    margin-left: 550px;
+}
+
+.main_btn {
+    background: #d66d0b;
+    position: relative;
+    left: 1000px;
+    bottom: 30px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px; 
+}
+
+.main_btn a {
+    text-decoration: none;
+    color: #f5f2f1;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.main_btn i {
+    font-size: 18px;
+    color: #000;
+}
+
+/* About Section */
+.about_text1 h1 {
+    margin-top: -400px;
+    font-size: 50px;
+    margin-left: -5px;
+}
+
+.about_text1 span {
+    margin-left: 750px;
+    margin-top: -50px;
+    font-family: "Bitstream Vera Serif", serif;
+    color: #fac031;
+}
+
+.about_text2 {
+    margin-top: 30px;
+    margin-left: 700px;
+    font-size: 30px;
+}
+
+.about_btn {
+    background: #d66d0b;
+    position: relative;
+    left: 800px;
+    bottom: 30px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px; 
+    color: #f5f2f1;
+    text-decoration: none;
+}
+
+
+/* Menu */
+.Menu {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.Menu h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.Menu h1 span {
+    font-family: ui-monospace;
+    color: #fac031; 
+    font-size: 60px;
+}
+
+.Menu h1 span::after {
+    content: ' ';
+    width: 150px;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    top: -5px;
+}
+
+.Menu .menu_box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap :25px;
+  
+
+}
+
+.Menu .menu_box .menu_card {
+    width: 325px;
+    height: 480px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Menu .menu_box .menu_card .menu_image {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Menu .menu_box .menu_card .menu_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+
+}
+
+.Menu .menu_box .menu_card .menu_info h2,
+.Menu .menu_box .menu_card .menu_info p {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Menu .menu_box .menu_card .menu_image:hover img {
+ transform: scale(1.1);   
+}
